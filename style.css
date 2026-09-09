@@ -1,0 +1,77 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: shabnamD;
+    direction: rtl;
+}
+
+.navbar{
+    z-index: 1030 !important;
+}
+.dropdown-menu{
+    z-index: 1040 !important;
+}
+.navbar-brand img{
+    height: 60px;
+}
+#navbar_icons i{
+    font-size: 23px;
+}
+.nav_number{
+    font-size: 13px;
+}
+#navbar_icons a:hover{
+    color: #081cdc !important;
+}
+.dropdown-item:hover{
+    color: #081cdc;
+}
+.offcanvas-header{
+    background-color: #a1c1fa;
+}
+.offcanvas-body .list-group-item a:hover{
+    color: #081cdc !important;
+}
+.modal-header, .modal-footer{
+    background-color: #d7d7da;
+}
+
+/* ...........navbar............ */
+main section{
+    background-color: #d0d0d0;
+}
+#js-card-title{
+    font-weight: bold;
+}
+#js-card-title i:hover{
+    cursor: pointer;
+}
+/* ........................ main ended.............................. */
+footer{
+    background-color:#a1c1fa ;
+}
+#footer_logo p{
+    color: black;
+    font-size: 1.5vw;
+}
+#footer_logo div{
+    position: absolute;
+    bottom: 0;
+    background-color: #081cdc;
+    height: 2%;
+    width: 50%;
+}
+#footer_ContactUs address, #footer_ContactUs a{
+    color: black;
+    font-size: 1.4vw;
+}
+#social_media a{
+    font-size: 2.4vw;
+}
+#social_media a:hover{
+    color: #081cdc !important;
+    transition: 0.7s;
+}

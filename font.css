@@ -1,0 +1,9 @@
+@font-face {
+    font-family: shabnamD;
+    src: url(font/Farsi-Digits-Without-Latin/Shabnam-FD-WOL.ttf);
+}
+
+@font-face {
+    font-family: shabnam;
+    src: url(font/Shabnam.ttf);
+}

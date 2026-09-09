@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پرداخت - آموزشگاه سینتکس</title>
+    <link rel="shortcut icon" href="syntax-fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <nav class="navbar bg-light navbar-expand-lg position-sticky top-0 d-flex justify-content-around align-items-center">
+    <button class="navbar-toggler me-5" data-bs-toggle="offcanvas" data-bs-target="#nav_menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="../main page/index.html" class="navbar-brand">
+       <img src="Syntax-logo.png" alt="logo of Syntax">
+    </a>
+    <ul class="navbar-nav d-none d-lg-flex"> 
+      <li class="nav-item"><a href="#" class="nav-link">صفحه اصلی</a></li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">دوره‌ها</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">برنامه نویسی</a></li>
+          <li><a class="dropdown-item" href="#">شبکه</a></li>
+          <li><a class="dropdown-item" href="#">گرافیک</a></li>
+          <li><a class="dropdown-item" href="#">طراحی سایت</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="#" class="nav-link">راهنما</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">اساتید</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">تقویم آموزشی</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">درباره ما</a></li>
+    </ul>
+    <form class="position-relative d-none d-lg-block">
+      <input type="search" class="form-control" placeholder="جستجو...">
+      <button class="btn btn-outline-dark position-absolute end-0 top-0"><i class="bi bi-search"></i></button>
+    </form>
+    <div class="d-flex align-items-center gap-3 flex-nowrap" id="navbar_icons">
+      <a href="#" class="text-black" data-bs-toggle="modal" data-bs-target="#enrollment"><i class="bi bi-person"></i></a>
+      <!-- ....................navbar person modal...................... -->
+      <a href="#" class="text-black"><i class="bi bi-basket"></i></a>
+      <a class="nav_number text-nowrap text-decoration-none text-black" href="+982192004381">021-92004381 &nbsp;<i class="bi bi-telephone"></i></a>
+    </div>
+  </nav>
+  <!-- ...............................nav.................................... -->
+  <div class="modal" id="enrollment">
+   <div class="modal-dialog modal-dialog-centered">
+     <div class="modal-content">
+       <div class="modal-header">
+         <img src="syntax-fav-icon.png" alt="syntax logo" class="col-1 pe-3">
+         <span>آموزشگاه سینتکس</span>
+         <button class="btn btn-close" data-bs-dismiss="modal"></button>
+       </div>
+       <div class="modal-body">
+         <p class="align-items-center"> برای ادامه ثبت‌نام در دوره، لطفا وارد شوید</p>
+         <form>
+           <input type="tel" class="form-control" placeholder="+98 912 524 1234">
+         </form>
+       </div>
+       <div class="modal-footer">
+         <button class="btn btn-outline-dark col-11 m-auto">ورود با کد یکبار مصرف</button>
+       </div>
+     </div>
+   </div>
+  </div>
+  <!-- ....................................navbar person modal........................................ -->
+  <div class="offcanvas offcanvas-start d-lg-none" id="nav_menu">
+    <div class="offcanvas-header">
+      <span> آموزشگاه سینتکس</span>
+      <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <form class="position-relative mt-3 col-11 m-auto">
+      <input type="search" class="form-control" placeholder="جستجو...">
+      <button class="btn btn-outline-dark position-absolute end-0 top-0"><i class="bi bi-search"></i></button>
+    </form>
+    <ul class="offcanvas-body list-group">
+     <li class="list-group-item"><a class="text-decoration-none text-black" href="#">صفحه اصلی</a></li>
+     <li class="list-group-item">
+        <a class="text-decoration-none text-black d-flex justify-content-between" data-bs-toggle="collapse" href="#classes_list">
+          <span>دوره‌ها</span>
+          <span class="dropdown-toggle"></span>
+        </a>
+        <ul id="classes_list" class=" list-group list-group-flush collapse">
+          <li class="list-group-item"><a class="text-decoration-none text-black" href="#">برنامه نویسی</a></li>
+          <li class="list-group-item"><a class="text-decoration-none text-black" href="#">شبکه</a></li>
+          <li class="list-group-item"><a class="text-decoration-none text-black" href="#">گرافیک</a></li>
+          <li class="list-group-item"><a class="text-decoration-none text-black" href="#">طراحی سایت</a></li>
+        </ul>
+     </li>
+     <li class="list-group-item"><a class="text-decoration-none text-black" href="#">راهنما</a></li>
+     <li class="list-group-item"><a class="text-decoration-none text-black" href="#">اساتید</a></li>
+     <li class="list-group-item"><a class="text-decoration-none text-black" href="#">تقویم آموزشی</a></li>
+     <li class="list-group-item"><a class="text-decoration-none text-black" href="#">درباره ما</a></li>
+     <div class="d-flex justify-content-around mt-4">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#enrollment" class="btn btn-outline-dark">
+          ورود/ثبت نام
+          <i class="bi bi-person"></i>
+        </a>
+        <a href="+982192004381" class="btn btn-outline-dark">
+          شماره تماس
+          <i class="bi bi-telephone"></i>
+        </a>
+     </div>
+    </ul>
+  </div>
+  <!-- ........................................navbar offcanvas...................................... -->
+  <main class="pt-4 pb-4 bg-light">
+    <section class="rounded-5 container p-4">
+     <div class="progress">
+       <div class="progress-bar progress-bar-striped progress-bar-animated col-6"></div>
+     </div>
+     <div class="d-flex justify-content-between pt-2 text-nowrap">
+       <button class="btn btn-primary text-center rounded-5 col-3 text-white" style="font-size: 1.3vw;">انتخاب دوره</button>
+       <button class="btn btn-primary text-center rounded-5 col-3 text-white" style="font-size: 1.3vw;">بررسی اطلاعات و نحوه پرداخت</button>
+       <button class="btn btn-secondary text-center rounded-5 col-3" style="font-size: 1.3vw;">پرداخت و ثبت نام نهایی</button>
+     </div>
+     <p class="pt-4" style="font-weight: bold; font-size: 1.8vw;">تایید نهایی اطلاعات و ورود به درگاه پرداخت</p>
+     <p class="text-secondary" style="font-size: 1.2vw;">پس از پرداخت، ثبت نام شما قطعی و پیامک تائید ثبت‌نام برای شما ارسال می‌شود.</p>
+     <div class="card mt-3 bg-light">
+       <div class="row g-0">
+         <div class="col-md-4 d-flex justify-content-center align-items-center">
+           <img src="js.png" class="img-fluid" alt="js logo">
+         </div>
+         <div class="col-md-8">
+           <div class="card-body">
+             <h5 id="js-card-title" class="card-title d-flex justify-content-between">جاوا اسکریپت(مبتدی) <i class="bi bi-trash3"></i></h5>
+             <p class="card-text pt-5"><i class="pe-2 bi bi-person"></i>استاد لیلا امیری</p>
+             <p class="card-text "><i class="pe-2 bi bi-clock"></i>مدت دوره: 65 ساعت</p>
+             <p class="card-text "><i class="pe-2 bi bi-easel2"></i>نوع برگزاری: آنلاین</p>
+             <p><i class="pe-2 bi bi-info-circle"></i>از 19 تیر تا 17 مهر | جمعه | ساعت 9:00 تا 14:00</p>
+             <p class="card-text "><i class="pe-2 bi bi-currency-dollar"></i>قیمت: 19,800,000 تومان</p>
+             <span style="font-size: 1.1vw;"><i class="bi bi-check2-circle text-success pe-2"></i>پروژه محور با لابراتوارهای مجهز</span>
+             <span style="font-size: 1.1vw;"><i class="bi bi-check2-circle text-success pe-2"></i>امکان دانلود کپچر‌های دوره</span>
+             <span style="font-size: 1.1vw;"><i class="bi bi-check2-circle text-success pe-2"></i>با همراهی دائمی استاد و منتور</span>
+           </div>
+         </div>
+       </div>
+     </div>
+     <p class="pt-4" style="font-weight: bold; font-size: 1.8vw;"><i class="bi bi-credit-card"></i> شیوه پرداخت</p>
+     <div class="d-flex flex-wrap">
+       <form class="col-12 col-md-6 bg-light p-3 mb-2">
+         <input class="form-check-input" type="radio" name="pay">
+         <label for="text">پرداخت نقدی</label>
+       </form>
+       <form class="col-12 col-md-6 bg-light p-3 mb-2">
+         <input class="form-check-input" type="radio" name="pay">
+         <label for="text">پرداخت قسطی (بین 1 تا 6 قسط)</label>
+       </form>
+     </div>
+     <div class="d-flex flex-wrap">
+       <form class="col-12 col-md-6 bg-light p-3">
+         <label class="form-label" for="">نام:</label>
+         <input class="form-control" type="text">
+         <label class="form-label" for="">نام خانوادگی:</label>
+         <input class="form-control" type="text">
+       </form>
+       <form class="col-12 col-md-6 bg-light p-3">
+         <label class="form-label" for="">شماره موبایل:</label>
+         <input class="form-control" type="text">
+         <label class="form-label" for=""> ایمیل:</label>
+         <input class="form-control" type="email">
+       </form>
+     </div>
+     <!-- <div class="card mt-3 bg-light">
+       <div class="row g-0">
+         <div class="col-md-8">
+           <div class="card-body">
+             <h5 class="card-title"><i class="bi bi-ticket-detailed pe-2" style="font-weight: bold;"></i>جزئیات پرداخت</h5>
+             <p class="card-text pt-1">مبلغ کل: 19,800,000 تومان</p>
+             <form class="d-flex">
+               <input type="text" class="form-control" placeholder="کد تخفیف">
+               <button class="btn btn-warning">ثبت </button>
+             </form>
+             <p class="card-text pt-2 text-success">مبلغ قابل پرداخت: 19,800,000 تومان</p>
+           </div>
+         </div>
+         <div class="card-footer">
+          <button class="btn btn-outline-dark container-fluid">ورود به درگاه پرداخت</button>
+         </div>
+       </div>
+     </div> -->
+     <div class="card mt-3 bg-light">
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-ticket-detailed pe-2" style="font-weight: bold;"></i>جزئیات پرداخت</h5>
+            <p class="card-text pt-1">مبلغ کل: 19,800,000 تومان</p>
+            <form class="d-flex">
+              <input type="text" class="form-control" placeholder="کد تخفیف">
+              <button class="btn btn-warning">ثبت </button>
+            </form>
+            <p class="card-text pt-2 text-success">مبلغ قابل پرداخت: 19,800,000 تومان</p>
+          </div>
+        </div>
+        <div class="card-footer">
+         <button class="btn btn-outline-dark container-fluid">ورود به درگاه پرداخت</button>
+        </div>
+     </div>
+    </section>
+  </main> 
+  <!-- ................................................main.......................................... -->
+  <!-- <footer class="pt-3">
+    <div class="d-flex flex-column justify-content-center align-items-center text-nowrap m-auto col-4 col-md-6 position-relative" id="footer_logo">
+      <img src="Syntax-logo.png" alt="" class="w-50">
+      <p>فکر کن، یاد بگیر، خلق کن</p>
+      <div></div>
+    </div>
+    <div class="text-center text-nowrap pt-2" id="footer_ContactUs">
+      <address><i class="bi bi-geo-alt pe-2"></i>آدرس: تهران، خیابان مطهری، خیابان میرعماد، کوچه جنتی(۱۳)، پلاک ۳۰</address>
+      <a class=" text-decoration-none" href="+982192004381"> <i class="bi bi-telephone pe-2"></i>شماره تماس: 02192004381</a>
+    </div>
+    <div class="d-flex justify-content-center pt-3" id="social_media">
+      <a class="text-black pe-5" href="#"><i class="bi bi-telegram"></i></a>
+      <a class="text-black pe-5" href="#"><i class="bi bi-youtube"></i></a>
+      <a class="text-black pe-5" href="#"><i class="bi bi-instagram"></i></a>
+      <a class="text-black pe-5" href="#"><i class="bi bi-linkedin"></i></a>
+      <a class="text-black pe-5" href="#"><i class="bi bi-envelope-at"></i></a>
+      <a class="text-black pe-5" href="#"><i class="bi bi-whatsapp"></i></a>
+    </div>
+  </footer> -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
